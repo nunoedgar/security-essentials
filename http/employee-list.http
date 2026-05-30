@@ -1,0 +1,6 @@
+### List Employees
+@baseUrl = http://localhost:8080
+
+GET {{baseUrl}}/employees
+Accept: application/json
+

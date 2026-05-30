@@ -1,0 +1,7 @@
+### Get Employee By Id
+@baseUrl = http://localhost:8080
+@employeeId = 1
+
+GET {{baseUrl}}/employees/{{employeeId}}
+Accept: application/json
+
