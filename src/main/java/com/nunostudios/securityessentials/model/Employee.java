@@ -7,7 +7,7 @@ import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
-import java.time.Instant;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -32,7 +32,10 @@ public class Employee {
 
     @ColumnDefault("CURRENT_TIMESTAMP")
     @Column(name = "CREATED_AT", nullable = false)
-    private Instant createdAt;
+    private LocalDateTime createdAt;
 
-
+    @PrePersist
+    public void onCreate() {
+        createdAt = LocalDateTime.now();
+    }
 }

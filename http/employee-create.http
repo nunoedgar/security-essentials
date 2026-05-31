@@ -5,11 +5,10 @@ POST {{baseUrl}}/employees
 Content-Type: application/json
 
 {
-  "name": "Ana Silva",
-  "email": "ana.silva@company.com",
+  "name": "João Silva",
+  "email": "joao.silva@company.com",
   "role": {
-    "id": 1
-  },
-  "createdAt": "2026-05-30T10:00:00Z"
+    "id": 3
+  }
 }
 
