@@ -1,6 +1,8 @@
 ### Delete Employee
 @baseUrl = http://localhost:8080
 @employeeId = 1
+@username = user
+@password = paste_password_here
 
 DELETE {{baseUrl}}/employees/{{employeeId}}
-
+Authorization: Basic {{username}} {{password}}

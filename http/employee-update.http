@@ -1,9 +1,12 @@
 ### Update Employee
 @baseUrl = http://localhost:8080
 @employeeId = 1
+@username = user
+@password = paste_password_here
 
 PUT {{baseUrl}}/employees/{{employeeId}}
 Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
 
 {
   "name": "Ana Silva Updated",
@@ -13,4 +16,3 @@ Content-Type: application/json
   },
   "createdAt": "2026-05-30T10:00:00Z"
 }
-

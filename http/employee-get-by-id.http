@@ -1,7 +1,9 @@
 ### Get Employee By Id
 @baseUrl = http://localhost:8080
 @employeeId = 1
+@username = user
+@password = paste_password_here
 
 GET {{baseUrl}}/employees/{{employeeId}}
 Accept: application/json
-
+Authorization: Basic {{username}} {{password}}

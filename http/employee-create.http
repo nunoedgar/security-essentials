@@ -1,8 +1,11 @@
 ### Create Employee
 @baseUrl = http://localhost:8080
+@username = user
+@password = paste_password_here
 
 POST {{baseUrl}}/employees
 Content-Type: application/json
+Authorization: Basic {{username}} {{password}}
 
 {
   "name": "João Silva",
@@ -11,4 +14,3 @@ Content-Type: application/json
     "id": 3
   }
 }
-
