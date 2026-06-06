@@ -1,16 +1,13 @@
 ### Create Employee
 @baseUrl = http://localhost:8080
 @username = user
-@password = paste_password_here
+@password = 71e74bce-1d0e-4fa5-b0eb-e78723eb36e3
 
 POST {{baseUrl}}/employees
 Content-Type: application/json
-Authorization: Basic {{username}} {{password}}
+//Authorization: Basic {{username}} {{password}}
 
 {
-  "name": "João Silva",
-  "email": "joao.silva@company.com",
-  "role": {
-    "id": 3
-  }
+  "name": "Virginia Fonseca",
+  "email": "virginia.fonseca@company.com"
 }

@@ -36,7 +36,6 @@ public class EmployeeService implements IEmployeeService {
 		Employee currentEmployee = findById(id);
 		currentEmployee.setName(employee.getName());
 		currentEmployee.setEmail(employee.getEmail());
-		currentEmployee.setRole(employee.getRole());
 		currentEmployee.setCreatedAt(employee.getCreatedAt());
 		return employeeRepository.save(currentEmployee);
 	}

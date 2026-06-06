@@ -1,8 +1,8 @@
 ### List Employees
 @baseUrl = http://localhost:8080
 @username = user
-@password = paste_password_here
+@password = 8d8e7ddc-1780-444e-9d00-5b427e6cad41
 
 GET {{baseUrl}}/employees
 Accept: application/json
-Authorization: Basic {{username}} {{password}}
+//Authorization: Basic {{username}} {{password}}
